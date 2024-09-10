@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+/* All comments go between the front slash and asterisk symbols */
+
+body {
+	background-color: #31456b;   /* background color */
+	color: black;          /* text color for the entire page */
+	}
+
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+	background-color: #6b92b6;   /* background color */
+	color: black;          /* text color */
+	border-radius: 50%;
+}
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+	width: 85%;
+	margin:auto;    /* centers wrapper */
+}
+
+/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
+.stepTitle{
+	padding:10px;
+	text-align:center;
+	background-color:#6b92b6;
+	font-weight: bold;
+	font-size: 200%;
+	border-radius: 50%;
+	
+	 }
+
+.stepContent{ 
+	background-color: white;
+	padding:7px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 200%;
+	}
+
+.stepDescription {
+	width:55%;
+	padding:5px;
+	line-height:100%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: left;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 0px;
+}
+
+.stepImage {
+	width:40%;
+	height:auto;
+	padding:5px;
+	align-items:center;
+	display: center;
+	flex-wrap:wrap;
+	justify-content:center;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 50px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; /* Adjust the width as needed */
+
+
+}
+
+.stepImage img {
+    width:100%;
+    height:auto;
+}
+
+strong {
+  font-weight: 800;
+}
