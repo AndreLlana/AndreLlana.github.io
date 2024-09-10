@@ -6,14 +6,21 @@
 body {
 	background-color: #31456b;   /* background color */
 	color: black;          /* text color for the entire page */
+	font-family: "Open Sans", sans-serif;
+ 	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: medium;
+  	font-variation-settings:
+    "wdth" 100;
 	}
+
 
 h1, h2 { 
 	text-align:center;     /* centers h1 and h2 content */
 	background-color: #6b92b6;   /* background color */
 	color: black;          /* text color */
-	border-radius: 50%;
-}
+	border-radius: 35%;
+	}
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
 	width: 85%;
@@ -21,6 +28,13 @@ h1, h2 {
 }
 
 /* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
+
+.purple-purse-regular {
+  font-family: "Purple Purse", serif;
+  font-weight: 400;
+	font-style:bold;
+		}
+
 .stepTitle{
 	padding:10px;
 	text-align:center;
