@@ -45,9 +45,12 @@ h1, h2 {
 	
 	 }
 
-.stepContent{ 
-	background-color: white;
-	padding:7px;
+
+.stepContent{
+    background-color: lightblue;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: center;
@@ -57,40 +60,36 @@ h1, h2 {
 
 .stepDescription {
 	width:55%;
-	padding:5px;
+	padding:0;
 	line-height:100%;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: left;
-	border-radius: 20px;
+	border-radius: 0;
 	box-shadow: 0 4px 8px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 0px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 0px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 .stepImage {
 	width:40%;
 	height:auto;
-	padding:5px;
+	padding:0;
 	align-items:center;
 	display: center;
 	flex-wrap:wrap;
 	justify-content:center;
-	border-radius: 50%;
+	border-radius: 0%;
 	box-shadow: 0 4px 8px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 50px;
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%; /* Adjust the width as needed */
-
-
-}
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+  margin-left: 0;
+  margin-right: 0;
+					}
 
 .stepImage img {
     width:100%;
