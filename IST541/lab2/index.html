@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Lab 1: Job Aid</title>
+<title>Lab 2: Job Aid</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -25,15 +27,11 @@
             margin: 0; /* Outer margin */
             width: 50%; /* Width of the div */
             height: 100%; /* Height of the div */
-		 	padding:0;
 		 	width: 100%;
 			background-color: lightblue;
 			text-align: left;
 			box-sizing: border-box;
-			
-			box-sizing: border-box;
-			padding:0;
-			display: flex;
+						display: flex;
 			flex-wrap:wrap;
 			justify-content: center;
 			font-weight: bold;
@@ -63,20 +61,22 @@
   </style>
 </head>
 
-<body><div id="wrapper">
+<body>
+	
+	<div id="wrapper">
   
     <div id="header">
-		<h1> How to Setup a CPAP Machine 
-		</h1>  
-       <h2> By Andre Llana </h2>  <br>
+		<h1 class="color"> How to Setup a CPAP Machine </h1>
+		
+       <h2 class="color"> By Andre Llana </h2>  
     </div>
-	<div id="Supply List">
 
-
-		<div class="stepTitle">
+		
+<details open>
+		<summary class="stepTitle">
 			Materials Needed
-		</div>
-<br>
+		</summary>
+		
 		<div class="rounded-div">
 
 			<div class="stepDescription">
@@ -90,20 +90,17 @@
 				<li>Tubing</li>
     			</ul>
 				</div>
-
-
 		</div><!--Materials needed-->
-<br>
-    </div><!--step1-->
-	<div id="step1">
+</details><!--step1-->
+	
+		
+		
+<details>
+		<summary class="stepTitle">
+Step 1: Find the Machine
+		</summary>
 
-
-		<div class="stepTitle">
-			Step 1: Find the Machine
-		</div>
-<br>
-		<div class="stepContent">
-
+		<div class="rounded-div">
 			<div class="stepDescription">
 				<p>Locate the clients CPAP machine.</p>
 				<p>It should be next to the bed on the end table.</p>
@@ -111,104 +108,96 @@
 			</div>
 
 		<div class="stepImage">
-			<img src="img/step1.png" alt="CPAP"/>
+			<img src="../lab1/img/step1.png" alt="CPAP"/>
 		</div>
 
 		</div><!--stepContent-->
+</details><!--step1-->
 
-    </div><!--step1-->
-<br>
- 	 	<div id="step2">
-
-			<div class="stepTitle">
-			Step 2: Fill the Humidifier Reservoir
-			</div>
-<br>
-			<div class="stepContent">
+ 	 	
+		
+<details>
+			<summary class="stepTitle">
+Step 2: Fill the Humidifier Reservoir
+			</summary>
+			<div class="rounded-div">
 			<div class="stepDescription">
 			  <p>Locate the clear resevoir container and fill to the MAX line with distilled water.&nbsp; &nbsp; &nbsp;&nbsp;</p>          
 			  <p>You will find the distilled water in the supply cabinet. Set aside.&nbsp;&nbsp;</p>
-			  <p><em>Do not use tap water.</em>&nbsp; &nbsp;</p>
-<p>Do not insert reservoir into machine before checking power connection.&nbsp; &nbsp; &nbsp; &nbsp;</p>
+			  <p class="warning"><span class="material-icons">warning</span><em><strong>Do not use tap water.</strong></em>&nbsp; &nbsp;</p>
+				<p>Do not insert reservoir into machine before checking power connection.&nbsp; &nbsp; &nbsp; &nbsp;</p>
             </div>
 				<div class="stepImage">
-					<img src="img/step2.png" alt="Water reservoir and Distilled water" />
+					<img src="../lab1/img/step2.png" alt="Water reservoir and Distilled water" />
 				</div>
 			</div><!--stepContent-->
-    	</div><!--step2-->
-<br>
- 	 	<div id="step3">
+</details><!--step2-->
 
-			<div class="stepTitle">
-			Step 3: Attach the Hose
-			</div>
-<br>
-			<div class="stepContent">
+
+<details>
+			<summary class="stepTitle">
+Step 3: Attach the Hose
+			</summary>
+			<div class="rounded-div">
 			<div class="stepDescription">
 				<p>Locate the end of the hose that does not have the mask attached to it.&nbsp;</p>          
 				<p>Gently, but firmly, guide the end of the hose into the back of the CPAP machine.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
 			</div>
 				<div class="stepImage">
-					<img src="img/step3.png" alt="Top view CPAP machine and hose" />
+					<img src="../lab1/img/step3.png" alt="Top view CPAP machine and hose" />
 				</div>
 			</div><!--stepContent-->
-    	</div><!--step3-->
-<br>
- 	 	<div id="step4">
+    	</details><!--step3-->
+ 	 	<details>
 
-			<div class="stepTitle">
-			Step 4: Check Power Cord
-			</div>
-<br>
-			<div class="stepContent">
+			<summary class="stepTitle">
+Step 4: Check Power Cord
+			</summary>
+			<div class="rounded-div">
+					<div class="stepDescription">
+						<p>On the back of the machine is a place to insert the power cord.&nbsp; &nbsp;&nbsp;</p>          
+			 			 <p>Make sure that it is plugged all the way in and there is no water under the machine.</p>
+						<p>Check that there is power and air blowing from the mask. &nbsp;</p>
+            		</div>
+				<div class="stepImage">
+					<img src="../lab1/img/step4.png" alt="backside of CPAP machine showing power cord" />
+				</div>
+			</div><!--stepContent-->
+    	</details><!--step4-->
+ 	 	<details>
+
+			<summary class="stepTitle">
+Step 5: Check Hose for Leaks, Wear and Tear
+			</summary>
+		  <div class="rounded-div">
 			<div class="stepDescription">
-				<p>On the back of the machine is a place to insert the power cord.&nbsp; &nbsp;&nbsp;</p>          
-			  <p>Make sure that it is plugged all the way in and there is no water under the machine.</p>
-				<p>Check that there is power and air blowing from the mask. &nbsp;</p>
+					<p>While machine is running check for air leaks from the hose and any connecting spots along the hose.&nbsp;</p>          
+			  		<p>Check for&nbsp; mucas and excess fluid. Clean as needed.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+			  		<p>Check that there is power and air blowing from the mask.&nbsp; &nbsp;</p>
+					<p>Arrange tubing appropriately for clients use.&nbsp;</p>
             </div>
 				<div class="stepImage">
-					<img src="img/step4.png" alt="backside of CPAP machine showing power cord" />
+					<img src="../lab1/img/step5.png" alt="CPAP machine fully put togethere" />
 				</div>
 			</div><!--stepContent-->
-    	</div><!--step4-->
-<br>
- 	 	<div id="step5">
+    	</details><!--step5-->
+ 	 	<details>
 
-			<div class="stepTitle">
-			Step 5: Check Hose for Leaks, Wear and Tear
-			</div>
-<br>
-		  <div class="stepContent">
-			<div class="stepDescription">
-				<p>While machine is running check for air leaks from the hose and any connecting spots along the hose.&nbsp;</p>          
-			  <p>Check for&nbsp; mucas and excess fluid. Clean as needed.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-			  <p>Check that there is power and air blowing from the mask.&nbsp; &nbsp;</p>
-				<p>Arrange tubing appropriately for clients use.&nbsp;</p>
-            </div>
-				<div class="stepImage">
-					<img src="img/step5.png" alt="CPAP machine fully put togethere" />
-				</div>
-			</div><!--stepContent-->
-    	</div><!--step5-->
-<br>
- 	 	<div id="step6">
-
-			<div class="stepTitle">
-			Step 6: Adjust Mask to Clients Needs
-			</div>
-<br>
-		  <div class="stepContent">
+			<summary class="stepTitle">
+Step 6: Adjust Mask to Clients Needs
+			</summary>
+		  <div class="rounded-div">
 			<div class="stepDescription">
 				<p>Mask should be snug to nose but not tight.&nbsp; &nbsp;&nbsp;</p>          
 			  <p>Signs mask is too tight is the lifting of the nose upward towards the forehead.</p>
 			  <p>Double and triple checking comfort with client is important for a good nights sleep.</p>
-				<p>(This is highly important with non-verbal clients)&nbsp; &nbsp; &nbsp; &nbsp;</p>
+				<p class="warning">(This is highly important with non-verbal clients)&nbsp; &nbsp; &nbsp; &nbsp;</p>
             </div>
 				<div class="stepImage">
-					<img src="img/step6.png" alt="mask_and_tubing" />
+					<img src="../lab1/img/step6.png" alt="mask_and_tubing" />
 				</div>
 			</div><!--stepContent-->
-    	</div><!--step6-->
+    	</details><!--step6-->
 
 	</div><!--wrapper-->
 </body>

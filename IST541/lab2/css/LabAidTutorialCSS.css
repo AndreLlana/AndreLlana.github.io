@@ -36,11 +36,11 @@ h1, h2 {
 		}
 
 .stepTitle{
-	padding:10px;
-	text-align:center;
+	padding:20px;
+	text-align:left;
 	background-color:#6b92b6;
 	font-weight: bold;
-	font-size: 200%;
+	font-size: 190%;
 	border-radius: 50%;
 	
 	 }
@@ -48,8 +48,8 @@ h1, h2 {
 
 .stepContent{
     background-color: lightblue;
-    text-align: center;
-    padding: 0;
+    text-align: left;
+    padding: 0px;
     box-sizing: border-box;
 	display: flex;
 	flex-wrap:wrap;
@@ -65,12 +65,9 @@ h1, h2 {
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: left;
-	border-radius: 0;
-	box-shadow: 0 4px 8px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	border-radius: 20%;
+	
+	
 }
 
 .stepImage {
@@ -82,13 +79,8 @@ h1, h2 {
 	flex-wrap:wrap;
 	justify-content:center;
 	border-radius: 0%;
-	box-shadow: 0 4px 8px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-  margin-left: 0;
-  margin-right: 0;
+	box-shadow: 0 0px 0px 0 #6b92b6, 0 0px 0px 0 #6b92b6;
+	
 					}
 
 .stepImage img {
@@ -99,3 +91,20 @@ h1, h2 {
 strong {
   font-weight: 800;
 }
+.warning {
+		background-color: palevioletred;
+		padding:15px;
+		border-radius:20px;
+	}
+.color {
+		background-color: #6b92b6;
+		padding:0px;
+		border-radius:50px;
+		color:darkblue;}
+
+.material-icons {
+	color:red; 
+	font-size:3em;
+}
+
+
