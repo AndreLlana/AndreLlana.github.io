@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Text and Fonts */
+p {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  white-space: nowrap;
+  text-indent: 20px;
+  text-overflow: ellipsis;
+  direction: rtl;
+  font-variant: small-caps;
+  font-size-adjust: 0.58;
+  font-stretch: expanded;
+  word-wrap: break-word;
+  line-break: strict;
+}
+
+/* Backgrounds */
+body {
+  background-color: #f0f0f0;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-blend-mode: multiply;
+}
+
+/* Borders and Box Model */
+div {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #ccc;
+  border-width: 5px;
+  border-style: dotted;
+  overflow: hidden;
+  opacity: 0.8;
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  height: 400px;
+  max-height: 500px;
+  min-height: 200px;
+}
+
+/* Layout and Positioning */
+section {
+  display: flex;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
+  float: left;
+  clear: both;
+  visibility: visible;
+  isolation: isolate;
+  aspect-ratio: 16/9;
+  resize: both;
+}
+
+/* Flexbox */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  order: 2;
+  gap: 10px;
+  place-items: center;
+  place-content: space-between;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  grid-area: header;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-flow: dense;
+  align-self: center;
+  justify-self: stretch;
+}
+
+/* Animations and Transitions */
+.element {
+  transition: all 0.3s ease;
+  transform: rotate(45deg) scale(1.5) translate(10px, 20px);
+  transition-delay: 0.5s;
+  transition-duration: 2s;
+  animation: example 3s infinite ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes for animation */
+@keyframes example {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Filters and Effects */
+img {
+  filter: brightness(150%) blur(5px);
+  backdrop-filter: blur(10px);
+  clip-path: circle(50%);
+  mask-image: url('mask.png');
+  mask-position: center;
+  mix-blend-mode: screen;
+  caret-color: red;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .responsive-element {
+    width: 100vw;
+    height: 50vh;
+    min-width: 100px;
+    max-width: 500px;
+  }
+}
+
+/* Pseudo-elements and Classes */
+a:hover {
+  color: red;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+:nth-child(2n) {
+  background-color: lightgrey;
+}
+
+::before {
+  content: 'Prefix: ';
+}
+
+::after {
+  content: ' - Suffix';
+}
+
+/* Transforms and 3D Effects */
+.box {
+  transform: translate(20px, 30px) rotate(45deg) scale(1.2);
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  transform-origin: center;
+}
+
+/* Miscellaneous */
+.custom-element {
+  content: 'Custom';
+  tab-size: 4;
+  writing-mode: vertical-rl;
+  will-change: transform;
+}
