@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Example of 50 most used HTML elements">
+  <meta name="keywords" content="HTML, CSS, Web development">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most Used HTML Elements</title>
+  <link rel="stylesheet" href="">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .container { max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Webpage</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home">
+      <h2>Home Section</h2>
+      <p>This is an example of commonly used HTML elements in web development.</p>
+      <figure>
+        <img src="example.jpg" alt="Example image" width="400">
+        <figcaption>An example image.</figcaption>
+      </figure>
+
+      <article>
+        <h3>Article Example</h3>
+        <p>This <strong>article</strong> demonstrates the use of some HTML elements.</p>
+        <blockquote>
+          "This is an example of a blockquote element used for quotations."
+        </blockquote>
+        <cite>– Famous Person</cite>
+      </article>
+
+      <table>
+        <caption>Example Table</caption>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+          <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="about">
+      <h2>About Section</h2>
+      <p><em>This section uses various form elements.</em></p>
+
+      <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Section</h2>
+      <p>Here is how to embed media:</p>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="400">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      
+      <iframe src="https://www.example.com" width="600" height="400">
+        Your browser does not support iframes.
+      </iframe>
+    </section>
+
+    <aside>
+      <h3>Additional Info</h3>
+      <p>This is an <strong>aside</strong> element, usually used for side content like related links or advertisements.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Webpage. All rights reserved.</p>
+  </footer>
+
+  <script>
+    console.log("JavaScript is working!");
+  </script>
+</body>
+</html>

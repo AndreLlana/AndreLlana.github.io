@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	font-size: 250%;
+    font-family: "Papyrus", fantasy;
+    color: #01464A;
+	font-weight: bold;
+    background-color: #7EFBFD;
+    padding: 15px;
+    text-align: center;
+	border-radius: 20px;
+		box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+		border-top-left-radius: 99px;
+		border-top-right-radius: 99px;
+		border-bottom-left-radius: 99px;
+		border-bottom-right-radius: 99px;
+		border: none;
+		margin: 30px 6px;
+		cursor: pointer;
+	 position: relative;
+    z-index: 1001; /* Ensure it's above other elements */
+    margin-top: 20px; /* Adjust based on your navigation menu height */
+	
+}
+
+
+
+.navigation-menu {
+    position: relative; /* or absolute, depending on your layout */
+    top: 50;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: #83D8ED; /* Adjust as needed */
+}
+
+.video-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 640;
+    height: 360;
+}
+
+
+
+
+body {
+	text-align: center;
+	background-color:#83D8ED;  
+	color:  #01464A;
+}
+
+
+
+
+
+		a {
+			font-size: 125%;
+			background-color:  #7EFBFD; 
+			color:  black;
+		  font-family: Arial, sans-serif;
+		  font-weight: bold;
+		  text-align: center;
+		  text-transform: uppercase;
+		  text-decoration: underline black 3px;
+		  line-height: 4;
+		  letter-spacing: 1px;
+		  word-spacing: 1px;
+		  white-space: nowrap;
+		  text-overflow: ellipsis;
+		  font-variant: small-caps;
+		  font-size-adjust: 100%;
+		  font-stretch: expanded;
+		  word-wrap: break-word;
+		  line-break: strict;
+		border-radius: 20px;
+		box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+		border-top-left-radius: 70px;
+		border-top-right-radius: 70px;
+		border-bottom-left-radius: 70px;
+		border-bottom-right-radius: 70px;
+		border: none;
+		padding: 1px 25px;
+		display: inline-block;
+		margin: 20px 2px;
+		cursor: pointer;
+
+			
+			
+			
+				}
+
+
+	
+
+		a:hover {
+			font-size:200%;
+			background-color: #2AD9DC; 
+			color: blue; 
+			text-decoration: underline blue wavy 3px; 
+			font-family: "Courier New", monospace;
+			 word-spacing: 10%;
+
+			
+		}
+
+
+
