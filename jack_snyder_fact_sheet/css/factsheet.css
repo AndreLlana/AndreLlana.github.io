@@ -3,7 +3,7 @@ body {
     background-color: #83D8ED;  
     color: #01464A;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;	
 }
 
 h1 {
@@ -11,15 +11,15 @@ h1 {
     font-family: "Papyrus", fantasy;
     color: #01464A;
     font-weight: bold;
-    background-color: #7EFBFD;
+    background-color: #1DF3CE;
     padding: 15px;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-    border-top-left-radius: 99px;
-    border-top-right-radius: 99px;
-    border-bottom-left-radius: 99px;
-    border-bottom-right-radius: 99px;
+    border-top-left-radius: 180%;
+    border-top-right-radius: 180%;
+    border-bottom-left-radius: 180%;
+    border-bottom-right-radius: 180%;
     border: none;
     margin: 20px 6px;
     cursor: pointer;
@@ -32,6 +32,10 @@ h1, h2 {
     margin: 8px;
 }
 
+
+h2 {
+	color: red;
+}
 .navigation-menu {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping */
@@ -42,9 +46,16 @@ h1, h2 {
     top: 10px;
     width: 100%;
     z-index: 1000; /* Ensure it's above other content */
-    background-color: #83D8ED; /* Adjust as needed */
+    background-color: #059193; /* Adjust as needed */
+	 border-radius: 20px;
+    box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+   
+    cursor: pointer;
 }
-
 .navigation-menu a {
     display: block;
     flex: 1 1 auto; /* Allow buttons to grow and shrink */
@@ -55,26 +66,20 @@ h1, h2 {
     text-align: center;
     text-transform: uppercase;
     line-height: 4;
-    letter-spacing: 1px;
-    word-spacing: 1px;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-variant: small-caps;
     font-size: 150%; /* Set text size to 150% */
-    font-size-adjust: 100%;
-    font-stretch: expanded;
-    word-wrap: break-word;
-    line-break: strict;
     border-radius: 20px;
     box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px;
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 70px;
     border: none;
     padding: 1px 25px;
     margin: 20px 2px;
     cursor: pointer;
+	border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 
 .navigation-menu a:hover {
@@ -91,20 +96,106 @@ h1, h2 {
     flex-wrap: wrap; /* Allow wrapping */
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    height: 100vh; /* Full viewport height */
+    margin-top: 20px; /* Add margin to separate from navigation menu */
 }
 
 .box {
     flex: 1 1 200px; /* Grow and shrink with a base size of 200px */
     margin: 10px;
     padding: 20px;
-    background-color: #f0f0f0;
     text-align: center;
     border: 1px solid #ccc;
+    font-size: 175%;
+    font-family: "Papyrus", fantasy;
+    color: #01464A;
+    font-weight: bold;
+    background-color: #1DF3CE;
+    box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001; /* Ensure it's above other elements */
+	 width: 100%;
+    height: 50%;
+    border-radius: 50%;
 }
 
-/* Responsive layout - makes the navigation links stack vertically instead of horizontally on small screens */
+/* Styles for the summary elements */
+.stepTitle {
+    font-size:200%; /* Larger font size */
+    font-weight: bold;
+    background-color:; /* Light cyan background */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+	text-align: left
+}
+
+/* Styles for the rounded-div elements */
+.rounded-div {
+    background-color:  #7EFBFD; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for the stepDescription elements */
+.stepDescription {
+    font-size: 150%; /* Default font size */
+    line-height: 1.5; /* Line height for readability */
+    color: black; /* Slightly lighter text color */
+	text-align: left;
+}
+
+/* Styles for the warning class */
+.warning {
+    color: #d32f2f; /* Red color for warnings */
+    font-weight: bold;
+}
+
+/* Styles for the stepImage elements */
+.stepImage img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Styles for links */
+a {
+    color: #00796b; /* Teal color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.oval {
+    width: 150px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+
+
+
+/* Responsive layout for smaller screens */
 @media screen and (max-width: 600px) {
+    
+	.stepTitle {
+        font-size: 150%; /* Smaller font size for mobile */
+    }
+
+    .stepDescription {
+        font-size: 100%; /* Smaller font size for mobile */
+    }
+
     .navigation-menu a {
         flex: 1 1 100%; /* Make each button take full width */
         text-align: left;
