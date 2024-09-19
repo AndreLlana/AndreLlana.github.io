@@ -1,140 +1,112 @@
-@charset "utf-8";
-/* CSS Document */
+body {
+    text-align: center;
+    background-color: #83D8ED;  
+    color: #01464A;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
 h1 {
-	font-size: 250%;
+    font-size: 300%;
     font-family: "Papyrus", fantasy;
     color: #01464A;
-	font-weight: bold;
+    font-weight: bold;
     background-color: #7EFBFD;
     padding: 15px;
     text-align: center;
-	border-radius: 20px;
-		box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-		border-top-left-radius: 99px;
-		border-top-right-radius: 99px;
-		border-bottom-left-radius: 99px;
-		border-bottom-right-radius: 99px;
-		border: none;
-		margin: 30px 6px;
-		cursor: pointer;
-	 position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+    border-top-left-radius: 99px;
+    border-top-right-radius: 99px;
+    border-bottom-left-radius: 99px;
+    border-bottom-right-radius: 99px;
+    border: none;
+    margin: 20px 6px;
+    cursor: pointer;
+    position: relative;
     z-index: 1001; /* Ensure it's above other elements */
     margin-top: 20px; /* Adjust based on your navigation menu height */
-	
 }
-
-
 
 h1, h2 {
     margin: 8px;
 }
 
-
-
 .navigation-menu {
-	justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
     align-items: center;
-	display: flex;
-	overflow: hidden;
+    overflow: hidden;
     position: relative; /* or absolute, depending on your layout */
-    top: 50;
+    top: 10px;
     width: 100%;
     z-index: 1000; /* Ensure it's above other content */
     background-color: #83D8ED; /* Adjust as needed */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.video-container iframe {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 640;
-    height: 360;
+.navigation-menu a {
+    display: block;
+    flex: 1 1 auto; /* Allow buttons to grow and shrink */
+    color: black;
+    background-color: #7EFBFD; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-variant: small-caps;
+    font-size: 150%; /* Set text size to 150% */
+    font-size-adjust: 100%;
+    font-stretch: expanded;
+    word-wrap: break-word;
+    line-break: strict;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border: none;
+    padding: 1px 25px;
+    margin: 20px 2px;
+    cursor: pointer;
 }
 
-
-
-
-body {
-	text-align: center;
-	background-color:#83D8ED;  
-	color:  #01464A;
+.navigation-menu a:hover {
+    font-size: 200%; /* Set hover text size to 200% */
+    background-color: #2AD9DC; 
+    color: blue; 
+    font-family: "Courier New", monospace;
+    word-spacing: 10%;
 }
 
+/* Add the wrapper class */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+}
 
+.box {
+    flex: 1 1 200px; /* Grow and shrink with a base size of 200px */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 1px solid #ccc;
+}
 
-
-
-		a {
-			 display: block;
-			font-size: 125%;
-			background-color:  #7EFBFD; 
-			color:  black;
-		  font-family: Arial, sans-serif;
-		  font-weight: bold;
-		  text-align: center;
-		  text-transform: uppercase;;
-		  line-height: 4;
-		  letter-spacing: 1px;
-		  word-spacing: 1px;
-		  white-space: nowrap;
-		  text-overflow: ellipsis;
-		  font-variant: small-caps;
-		  font-size-adjust: 100%;
-		  font-stretch: expanded;
-		  word-wrap: break-word;
-		  line-break: strict;
-		border-radius: 20px;
-		box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-		border-top-left-radius: 70px;
-		border-top-right-radius: 70px;
-		border-bottom-left-radius: 70px;
-		border-bottom-right-radius: 70px;
-		border: none;
-		padding: 1px 25px;
-		margin: 20px 2px;
-		cursor: pointer;
-
-			
-			
-			
-				}
-
-
-	
-
-		a:hover {
-			font-size:200%;
-			background-color: #2AD9DC; 
-			color: blue; 
-			font-family: "Courier New", monospace;
-			 word-spacing: 10%;
-
-			
-		}
-
-
-
+/* Responsive layout - makes the navigation links stack vertically instead of horizontally on small screens */
+@media screen and (max-width: 600px) {
+    .navigation-menu a {
+        flex: 1 1 100%; /* Make each button take full width */
+        text-align: left;
+    }
+}
