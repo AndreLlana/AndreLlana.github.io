@@ -83,9 +83,9 @@ h2 {
 }
 
 .navigation-menu a:hover {
-    font-size: 200%; /* Set hover text size to 200% */
+    font-size: 150%; /* Set hover text size to 200% */
     background-color: #2AD9DC; 
-    color: blue; 
+    color: cyan; 
     font-family: "Courier New", monospace;
     word-spacing: 10%;
 }
@@ -105,7 +105,7 @@ h2 {
     padding: 20px;
     text-align: center;
     border: 1px solid #ccc;
-    font-size: 175%;
+    font-size: 300%;
     font-family: "Papyrus", fantasy;
     color: #01464A;
     font-weight: bold;
@@ -123,7 +123,6 @@ h2 {
 .stepTitle {
     font-size:200%; /* Larger font size */
     font-weight: bold;
-    background-color:; /* Light cyan background */
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -181,6 +180,145 @@ a:hover {
     background-color: #4CAF50;
     border-radius: 50%;
 }
+
+
+.grid-container {
+    display: grid;
+	grid-template-columns: repeat(8, fit-content(300px)); /* 8 columns */
+    grid-template-rows: repeat(4, fit-content(300px)); /* 4 rows */
+    gap: 10px; /* Gap between grid items */
+    padding: 20px;
+}
+
+
+
+/* Weekdays */
+.weekday {
+    background-color: #00796b;
+	 text-align: center; 
+    padding: 15px;
+    font-size: 150%;
+    border-radius: 10px;
+	text-color: white;
+}
+
+/* Shifts */
+.shift {
+    background-color: #00796b;
+    text-align: center; 
+    padding: 20px;
+    font-size: 150%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust as needed */
+}
+
+.time {
+	background-color: grey;
+	 text-align: center; 
+    padding: 10px;
+    font-size: 150%;
+    border-radius: 10px;
+	
+}
+
+.time2 {
+	background-color: #CDB1B1;
+	 text-align: center; 
+    padding: 0.5px;
+    font-size: 150%;
+    border-radius: 10px;
+	
+}
+
+.time3 {
+	background-color: #4C7BE8;
+	 text-align: center; 
+    padding: 0.5px;
+    font-size: 150%;
+    border-radius: 10px;
+	
+}
+/* Grid items */
+.grid-med {
+    display: grid;
+    grid-template-columns: repeat(5, fit-content(300px)); /* Adjust columns to fit content */
+    grid-template-rows: repeat(12, fit-content(300px)); /* 12 rows */
+    gap: 1px; /* Gap between grid items */
+    padding: 20px;
+    height: auto; /* Set height to auto */
+}
+
+.grid-one {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Set height to auto */
+	
+}
+
+.title {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Set height to auto */
+    border: 3px solid black; /* Add a visible border */
+}
+
+.medcolor {
+	color: #040C66;
+	
+}
+
+.use {
+	color: #040C66;
+	
+}
+
+.am {
+	color: #040C66;
+	
+}
+
+.after {
+	color: #040C66;
+	
+}
+
+.even {
+	color: #040C66;
+	
+}
+
+/* Different pastel colors for each row */
+.grid-one:nth-child(5n+1) { background-color: grey; } /* Light Pink */
+.grid-one:nth-child(5n+2) { background-color: #FFDFBA; } /* Light Orange */
+.grid-one:nth-child(5n+3) { background-color: lightslategrey; } /* Light Yellow */
+.grid-one:nth-child(5n+4) { background-color: #BAFFC9; } /* Light Green */
+.grid-one:nth-child(5n+5) { background-color: #BAE1FF; } /* Light Blue */
+
+
+
+
+
+
+
+
+
+
 
 
 
