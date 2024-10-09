@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <link rel="stylesheet" href="css/koala.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>What is a healthy treat for cats?</h1>
+        <ul>
+            <li onclick="wrongAnswer1()">Chocolate</li>
+            <li onclick="rightAnswer()">Cooked chicken</li>
+            <li onclick="wrongAnswer2()">Raw fish</li>
+			</ul>
+        <div id="feedback"></div>
+        <a href="question3.html">Next Question</a>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	
+	
+	
+	
+	
+	
+	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Thats correct! </h2>");
+         $("#koala_eating").show();
+      }
+		
+		 function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> Chocolate is dangerous to most pets. Please be aware. </h2>");
+      $("#koala_eating").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> Although cats can eat Tuna it is not good for their health. </h2>");
+      $("#koala_eating").hide();
+   }
+
+   </script>
+	
+	</body>
+</html>

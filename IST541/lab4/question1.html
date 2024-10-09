@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="css/koala.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>How often should you clean your cat's litter box?</h1>
+		<h3> Click on one of the following choices below</h3>
+        <ul>
+            <li onclick="wrongAnswer1()">Once a week</li>
+            <li onclick="rightAnswer()">Daily</li>
+            <li onclick="wrongAnswer2()">Once a month</li>
+			</ul>
+        <div id="feedback"></div>
+        <a href="question2.html">Next Question</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	
+	
+	
+	
+	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! Cleaning the litter box daily can help keep your furry friend healthy and clean.</h2>");
+         $("#koala_eating").show();
+      }
+		
+		 function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> Not quite, remember you want to help keep your furry friend clean and disease free. Cleaning more often will help. </h2>");
+      $("#koala_eating").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> Wow! That would be one full box! Not quite. </h2>");
+      $("#koala_eating").hide();
+   }
+
+   </script>
+
+	
+</body>
+</html>

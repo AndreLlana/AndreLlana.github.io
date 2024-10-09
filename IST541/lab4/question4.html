@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+     <link rel="stylesheet" href="css/koala.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <h1>What should you do if your cat stops eating?</h1>
+        <ul>
+            <li onclick="rightAnswer()">Take them to the vet</li>
+            <li onclick="wrongAnswer1()">Wait a few days</li>
+            <li onclick="wrongAnswer2()">Give them only treats</li>
+			</ul>
+        <div id="feedback"></div>
+        <a href="question5.html">Next Question</a>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Thats correct! To make sure your furry friend is okay of course! </h2>");
+         $("#koala_eating").show();
+      }
+		
+		 function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> If you wait then something could happen. Get to the vet as soon as possible. </h2>");
+      $("#koala_eating").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> Ignoring the issue can create bigger concerns. Get to vet As soon as possible. </h2>");
+      $("#koala_eating").hide();
+   }
+
+   </script>
+	</body>
+</html>

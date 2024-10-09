@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+	background-color: aqua
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: grab;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgray;
+    display: inline-block;
+    width: 200px;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: gray;
+}
+
+.choices {
+cursor: grab;
+}
+
+
+/* Styling for the initial state of the link */
+.start-quiz {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: lightblue;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-image 0.3s ease;
+}
+
+/* Change the link to an image when hovered */
+.start-quiz:hover {
+    background-image: url("../img/startbutton.png");
+    background-size: cover;
+    color: transparent; /* Hide the text */
+    width: 25%; /* Match the width of the image */
+    height: 25%; /* Match the height of the image */
+    display: inline-block;
+}
+
+
+
+/* Default link styling for the "Start Over" button */
+.start-over {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: lightcoral;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-image 0.3s ease;
+}
+
+/* Hover effect to change the background to an image */
+.start-over:hover {
+    background-image: url("../img/restart.png"); /* Ensure this path is correct */
+    background-size: cover;
+    color: transparent;
+    width: 10%; /* Adjust this to the size of your image */
+    height: 25%; /* Adjust this to the size of your image */
+    display: inline-block;
+}

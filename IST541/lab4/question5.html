@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+     <link rel="stylesheet" href="css/koala.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>How can you tell if a cat is dehydrated?</h1>
+        <ul>
+            <li onclick="rightAnswer()">Sunken eyes and lethargy</li>
+            <li onclick="wrongAnswer1()">Hyperactivity</li>
+            <li onclick="wrongAnswer2()">Increased appetite</li>
+			</ul>
+        <div id="feedback"></div>
+        <a href="conclusion.html">Conclusion</a>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Thats correct! Low energy and sunken eyes are sure signs of dehydration! </h2>");
+         $("#koala_eating").show();
+      }
+		
+		 function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> If your cat has energy it most likely not dehydrated. </h2>");
+      $("#koala_eating").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> If your cat is eating they are fine. </h2>");
+      $("#koala_eating").hide();
+   }
+
+   </script>
+	
+</body>
+</html>
