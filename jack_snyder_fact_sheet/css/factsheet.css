@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     text-align: center;
     background-color: #83D8ED;  
@@ -24,8 +25,7 @@ h1 {
     margin: 20px 6px;
     cursor: pointer;
     position: relative;
-    z-index: 1001; /* Ensure it's above other elements */
-    margin-top: 20px; /* Adjust based on your navigation menu height */
+    z-index: 1000; /* Ensure it's above other elements */
 }
 
 h1, h2 {
@@ -36,58 +36,119 @@ h2 {
     color: red;
 }
 
+/* Navigation Menu */
 .navigation-menu {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-around; /* Distribute items evenly */
-    align-items: center;
-    overflow: hidden;
-    position: relative; /* or absolute, depending on your layout */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center the dropdown title horizontally */
+    align-items: center; /* Align items vertically */
+    overflow: visible; /* Show overflow */
+    position: relative; /* Relative positioning */
     top: 10px;
     width: 100%; /* Ensure it takes the full width */
-    z-index: 1000; /* Ensure it's above other content */
-    background-color: #059193; /* Adjust as needed */
-    border-radius: 20px;
-    box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px;
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-    cursor: pointer;
+    z-index: 2000; /* Ensure it's above other content */
+    background-color: #059193; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6; /* Shadow effects */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
-.navigation-menu a {
-    display: block;
-    flex: 1 1 auto; /* Allow buttons to grow and shrink */
-    color: black;
-    background-color: #7EFBFD; 
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 4;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-variant: small-caps;
-    font-size: 150%; /* Set text size to 150% */
-    border-radius: 20px;
-    box-shadow: 0 4px 25px 0 #6b92b6, 0 6px 20px 0 #6b92b6;
+/* Dropdown Button */
+.dropbtn {
+    background-color: #059193;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
     border: none;
-    padding: 1px 25px;
-    margin: 20px 2px;
     cursor: pointer;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
+    border-radius: 20px;
+    position: relative; /* Keep relative positioning for absolute children */
+    margin: 0 auto; /* Center the button itself */
 }
 
+/* Dropdown title styling */
+.dropdown-title {
+    display: block; /* Make the title block-level */
+    text-align: center; /* Center the title text */
+    margin: 0 auto; /* Center the title horizontally */
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative; /* Keep relative positioning for absolute children */
+    display: inline-block; /* Change to inline-block */
+    text-align: center; /* Center text inside */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none; /* Default: hidden */
+    position: absolute; /* Positioning */
+    background-color: #f1f1f1;
+    min-width: 160px; /* Minimum width for the dropdown */
+    left: 50%; /* Center the dropdown content */
+    transform: translateX(-50%); /* Shift left by half its width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure it's on top of other content */
+    border-radius: 20px; /* Rounded corners */
+}
+
+/* Show the dropdown menu when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* Make links block-level */
+    text-align: left; /* Align text to the left */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Links in the Navigation */
+.navigation-menu a {
+    display: flex; /* Use flexbox for alignment */
+    flex: 0 1 auto; /* Prevent buttons from growing too large */
+    color: black; /* Text color */
+    background-color: #7EFBFD; 
+    font-family: Arial, sans-serif; /* Font family */
+    font-weight: bold; /* Bold text */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Uppercase text */
+    line-height: 1.5; /* Line height for better spacing */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Ellipsis for overflow text */
+    font-variant: small-caps; /* Small caps for text */
+    font-size: 1.5em; /* Scalable font size */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 22px 0 #6b92b6, 0 4px 22px 0 #6b92b6; /* Shadow effects */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for clickable area */
+    margin: 5px; /* Simplified margin */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover state for links */
 .navigation-menu a:hover {
-    font-size: 150%; /* Set hover text size to 200% */
-    background-color: #2AD9DC; 
-    color: cyan; 
-    font-family: "Courier New", monospace;
-    word-spacing: auto;
+    font-size: 1.75em; /* Increase font size on hover */
+    background-color: #2AD9DC; /* Change background color */
+    color: cyan; /* Change text color */
+    font-family: "Courier New", monospace; /* Change font family on hover */
+    word-spacing: normal; /* Normal word spacing */
 }
 
 /* Add the wrapper class */
@@ -99,6 +160,7 @@ h2 {
     margin-top: 20px; /* Add margin to separate from navigation menu */
 }
 
+/* Box styles */
 .box {
     flex: 1 1 auto; /* Grow and shrink with a base size of 200px */
     margin: 10px;
@@ -130,9 +192,6 @@ h2 {
     }
 }
 
-
-
-
 /* Styles for the summary elements */
 .stepTitle {
     font-size:200%; /* Larger font size */
@@ -141,7 +200,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
-	text-align: left
+	text-align: left;
 }
 
 /* Styles for the rounded-div elements */
@@ -187,14 +246,12 @@ a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-
 .oval {
     width: 150px;
     height: 100px;
     background-color: #4CAF50;
     border-radius: 50%;
 }
-
 
 .grid-container {
     display: grid;
@@ -203,8 +260,6 @@ a:hover {
     gap: 10px; /* Gap between grid items */
     padding: 20px;
 }
-
-
 
 /* Weekdays */
 .weekday {
@@ -235,7 +290,6 @@ a:hover {
     padding: 10px;
     font-size: 150%;
     border-radius: 10px;
-	
 }
 
 .time2 {
@@ -244,7 +298,6 @@ a:hover {
     padding: 0.5px;
     font-size: 150%;
     border-radius: 10px;
-	
 }
 
 .time3 {
@@ -253,8 +306,8 @@ a:hover {
     padding: 0.5px;
     font-size: 150%;
     border-radius: 10px;
-	
 }
+
 /* Grid items */
 .grid-med {
     display: grid;
@@ -275,7 +328,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: auto; /* Set height to auto */
-	
 }
 
 .title {
@@ -293,28 +345,23 @@ a:hover {
 }
 
 .medcolor {
-	color: #040C66;
-	
+	color: #040C66;	
 }
 
 .use {
-	color: #040C66;
-	
+	color: #040C66;	
 }
 
 .am {
-	color: #040C66;
-	
+	color: #040C66;	
 }
 
 .after {
-	color: #040C66;
-	
+	color: #040C66;	
 }
 
 .even {
-	color: #040C66;
-	
+	color: #040C66;	
 }
 
 /* Different pastel colors for each row */
@@ -324,23 +371,9 @@ a:hover {
 .grid-one:nth-child(5n+4) { background-color: #BAFFC9; } /* Light Green */
 .grid-one:nth-child(5n+5) { background-color: #BAE1FF; } /* Light Blue */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive layout for smaller screens */
 @media screen and (max-width: 600px) {
-    
-	.stepTitle {
+    .stepTitle {
         font-size: 150%; /* Smaller font size for mobile */
     }
 
