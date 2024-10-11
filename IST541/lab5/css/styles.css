@@ -1,44 +1,64 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 body {
-	background-image: url("../img/chinese_writing.gif");   /* background image*/
-	color: #444;          /* text color for the entire document */
-	font-size: 150%;
-	font-family:Verdana, Geneva, sans-serif;
+    background-image: url("../img/CSUMB_BCKGRND_2.png");   /* background image */
+    color: #444;          /* text color for the entire document */
+    font-size: 150%;
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #wrapper {
-	width:95%;
-	margin:0 auto;         /* centers wrapper */
- 	text-align:center;
-	background-color: rgba(255, 255, 255, 0.8);  /* creates white background with 80% opacity */
+    width: 95%;
+    text-align: center;
+    background-color: transparent;  /* creates white background with 80% opacity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-table {
-	margin:0 auto;  /* centers table*/
+h1 {
+    text-align: center;     /* centers h1 content */
+    width: 100%;
+    z-index: 3000;          /* Ensures h1 is always on top */
+    background-color: transparent; /* Background to ensure text is readable */
+    margin: 0;              /* Removes default margin */
+    padding: 10px 0;        /* Adds padding for better appearance */
 }
 
-td {
-	background-color: white;  /* sets background color for table cells*/
+img {
+    max-width: 100%;
+    height: auto;
+    position: relative;     /* Allows z-index to work */
+    z-index: 1;             /* Places images behind audio controls */
 }
 
-h1, h2 { 
-	text-align:center;     /* centers h1 and h2 content */
+.audio-controls {
+    z-index: 2;             /* Ensures audio controls are above images */
+    margin-top: 10px;       /* Adds some space above the audio controls */
+    position: relative;     /* Allows z-index to work */
 }
 
-audio { 
-	width:200px;   /* sets the width of the audio controls */
+.text-overlay {
+    position: auto;     /* Positions text above images */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;             /* Ensures text is above images and audio controls */
+    color: white;           /* Example text color */
+    background: rgba(0, 0, 0, 0.5); /* Example background for better readability */
+    padding: 5px;           /* Adds padding for better appearance */
 }
 
-
-video::cue {
-  background: rgba(0, 0, 0, 0.8);
-  color: black;
-  font-size: 20px;
+video {
+    margin-top: 20px;       /* Adds space above the video */
+    max-width: 100%;
 }
-
-
