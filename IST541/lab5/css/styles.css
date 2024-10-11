@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 60px;  /* Adjust this value as needed to create space for the h1 */
 }
 
 h1 {
