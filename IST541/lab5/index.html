@@ -1,48 +1,55 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>LAB5</title>
-<link href="css/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>LAB5</title>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
+	<style>
+        #wrapper {
+            width: 95%;
+            text-align: center;
+            background-color: transparent;  /* creates white background with 80% opacity */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 600px;  /* Adjust this value as needed to create space for the h1 */
+        }
+    </style>
     <div id="wrapper">
-        <h1>How to Tie a Tie</h1>
+         <div id="nav">
+            <a href="index.html">How to Eat Pizza</a>
+            <a href="page2.html">How to Tie a Tie</a>
+        </div>
+        <h1>How To Eat Pizza</h1>
         <table border="1">
             <tr>
                 <td>
                     <div class="text-overlay">Step 1</div>
-                    <img src="img/one.png" alt="Step 1" />
-                    <audio class="audio-controls" controls src="audio/one.mp3"> 
-                        This browser does not support HTML5 audio
+                    <img src="img/pizza.jpg" alt="Step 1" />
+                    <audio class="audio-controls" controls src="audio/pizza.mp3">
+                         This browser does not support HTML5 audio
                     </audio>
                 </td>
                 <td>
-                    <div class="text-overlay">Step 2 and 3</div>
-                    <img src="img/twoThree.png" alt="Step 2 and 3" />
-                    <audio class="audio-controls" controls src="audio/twoThree.mp3"> 
-                        This browser does not support HTML audio
+                    <div class="text-overlay">Step 2</div>
+                    <img src="img/pizzaSlice.jpg" alt="Step 2" />
+                    <audio class="audio-controls" controls src="audio/pizzaSlice.mp3">
+                         This browser does not support HTML audio
                     </audio>
                 </td>
                 <td>
-                    <div class="text-overlay">Step 4</div>
-                    <img src="img/four.png" alt="Step 4" />
-                    <audio class="audio-controls" controls src="audio/four.mp3"> 
-                        This browser does not support HTML5 audio
+                    <div class="text-overlay">Step 3</div>
+                    <img src="img/pizzaPlate.jpg" alt="Step 3" />
+                    <audio class="audio-controls" controls src="audio/eatPizza.mp3">
+                         This browser does not support HTML5 audio
                     </audio>
                 </td>
-                <td>
-                    <div class="text-overlay">Step 5</div>
-                    <img src="img/five.png" alt="Step 5" />
-                    <audio class="audio-controls" controls src="audio/five.mp3"> 
-                        This browser does not support HTML5 audio
-                    </audio>
-                </td> 
             </tr>
-        </table>    
+        </table>
         <video controls>
-            <source src="video/howToTieATie.mp4" type="video/mp4" />
+            <source src="video/eatPizza.mp4" type="video/mp4" />
             <source src="video/howToTieATie.ogg" type="video/ogg" />
             <track id="entrack" label="English subtitles" kind="captions" src="video/captionsTie.vtt" srclang="en" default>
             Your browser does not support the video tag.
