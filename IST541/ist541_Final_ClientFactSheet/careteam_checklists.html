@@ -101,26 +101,26 @@
 
     <!-- First Image Hotspot Section -->
     <details>
-        <summary class="stepTitle">CPAP Feature Overview 1</summary>
+        <summary class="stepTitle">CPAP Feature Overview</summary>
         <div class="rounded-div">
             <div class="stepDescription">
-                <p>Click on the hotspots in the image below:</p>
+                <p>Click on an area to learn more about the CPAP machine</p>
                 <!-- Image with a map -->
                 <img src="img/step1.png" alt="CPAP Front View" usemap="#cpap-map1">
 
                 <!-- Define the image map with clickable areas -->
              <map name="cpap-map1">
-    <area shape="circle" coords="403,90,60" alt="Navigation Dial" href="#" onclick="showModal(event, 'modal_nav_dial')">
+    <area shape="circle" coords="350,120,40" alt="Navigation Dial" href="#" onclick="showModal(event, 'modal_nav_dial')">
 				 
 				 
 				 
-    <area shape="circle" coords="351,146,60" alt="Display Panel" href="#" onclick="showModal(event, 'modal_display_panel')">
+    <area shape="circle" coords="230,100,60" alt="Display Panel" href="#" onclick="showModal(event, 'modal_display_panel')">
 				 
 				 
-    <area shape="circle" coords="767,196,60" alt="Water Reservoir" href="#" onclick="showModal(event, 'modal_water_reservoir')">
+    <area shape="circle" coords="540,120,60" alt="Water Reservoir" href="#" onclick="showModal(event, 'modal_water_reservoir')">
 				 
 				 
-    <area shape="circle" coords="342,309,60" alt="Home Key" href="#" onclick="showModal(event, 'modal_home_key')">
+    <area shape="circle" coords="230,200,40" alt="Home Key" href="#" onclick="showModal(event, 'modal_home_key')">
 				 
 				 
 </map>
@@ -161,23 +161,6 @@
         <p>Home Key: Press to return to the home screen.</p>
         <button class="close-btn" onclick="closeModal('modal_home_key')">Close</button>
     </div>
-
-    <!-- Second Image Hotspot Section -->
-    <details>
-        <summary class="stepTitle">CPAP Feature Overview</summary>
-        <div class="rounded-div">
-            <div class="stepDescription">
-                <p>Click on the hotspots in the image below:</p>
-                <!-- Image with a map -->
-                <img src="img/cpap_side.png" alt="CPAP Side View" usemap="#cpap-map2">
-
-                <!-- Define the image map with clickable areas -->
-                <map name="cpap-map2">
-                    <area shape="circle" coords="300,150,50" alt="Air Outlet" href="#" onclick="showModal(event, 'modal2')">
-                </map>
-            </div>
-        </div><!--stepContent-->
-    </details><!--step2-->
 
     <!-- Modal 2 for Air Outlet -->
     <div id="modal2" class="modal">
