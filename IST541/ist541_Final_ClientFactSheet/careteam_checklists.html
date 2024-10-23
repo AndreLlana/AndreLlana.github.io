@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fact Sheet</title>
     <link href="css/factsheet.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Modal (Text Bubble) Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10; /* To ensure it appears on top */
+        }
+
+        /* Close Button inside the modal */
+        .close-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 100%; /* Adjust the size of the image */
+            max-width: 600px;
+        }
+    </style>
 </head>
 <body>
-    <h1><strong>Nancys' Fact Sheet</strong></h1>
+    <h1><strong>Nancy's Fact Sheet</strong></h1>
     <h2>Updated: October 2024</h2>
 
     <nav class="navigation-menu">
@@ -36,25 +64,8 @@
             <div class="stepDescription">
                 <ul>
                     <li>Wake-up time varies, but no later than 10 am.</li>
-                    <li><strong>Wake-up routine:</strong>
-                        <ul>
-                            <li>CPAP machine (turn off machine, check water level and refill with distilled water to ‘max line’ as needed). For more information on using CPAP machines, visit <a href="https://www.sleepfoundation.org/sleep-apnea/cpap" target="_blank">Sleep Foundation</a>.</li>
-                            <li>Glasses are kept in the tub on her TV tray near her bed – please clean with lens wipes or soap and water.</li>
-                            <li>Help with clothes change; she prefers soft cotton fabrics.</li>
-                            <li>She needs to wear compression socks up to her knee (can wear socks on top) and her Velcro shoes.</li>
-                            <li>Empty bedside urinals.</li>
-                            <li>Use toilet.</li>
-                            <li>At the recliner, she will need her compression waist belt on (secure it tightly around her mid-section, not too high).</li>
-                            <li>Put on headphones for hearing and hat and blanket.</li>
-                            <li>Recliner is electric so can go up and down using remote attached to the TV tray.</li>
-                        </ul>
-                    </li>
-                    <li>Breakfast at 10:30 am.</li>
-                    <li><strong>Blood pressure:</strong> There is an automatic cuff on the table near the recliner. Please document blood pressure on the sheet near her recliner. You can learn more about blood pressure monitoring from <a href="https://www.heart.org/en/about-us/heart-attack-and-stroke-symptoms" target="_blank">American Heart Association</a>.</li>
-                    <li><strong>Medication:</strong> Morning pills from the container; she has a weekly pill organizer. You can find tips for organizing medications at <a href="https://www.cdc.gov/medication-safety/about/index.html?CDC_AAref_Val=https://www.cdc.gov/medicationsafety/medication-organizers.html" target="_blank">CDC</a>.</li>
-                    <li>Please have her use the toilet 15 minutes before leaving.</li>
-                    <li>Please provide water and snacks before leaving.</li>
-                    <li><strong>Favorites:</strong> Cottage cheese with fruit, macaroni salad, apple sauce, hard-boiled egg, jello, pudding, tapioca, smoothies, cereal bar, Ensure drink, diced fruit.</li>
+                    <li>Assisted with personal hygiene.</li>
+                    <li>Encourage light stretching exercises.</li>
                 </ul>
             </div>
         </div><!--stepContent-->
@@ -67,28 +78,8 @@
             <div class="stepDescription">
                 <ul>
                     <li>Dinner about 6:15 pm; she prefers her meals seasoned lightly.</li>
-                    <li><strong>Medication:</strong> Evening pills from the container around 7:30-8 pm; ensure she has a glass of water with them.</li>
-                    <li><strong>Light cleaning:</strong> Wipe counters after dinner, swifter, empty trash as needed.</li>
-                    <li><strong>Bedtime routine:</strong>
-                        <ul>
-                            <li>Use toilet.</li>
-                            <li>Teeth brushing/mouthwash. For tips on oral hygiene, check out <a href="https://www.ada.org/resources/ada-library/oral-health-topics/home-care" target="_blank">American Dental Association</a>.</li>
-                            <li>May want 2 puffs of her inhaler if short of breath once she is at her bed. For information on inhaler use, see <a href="https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler" target="_blank">American Lung Association</a>.</li>
-                            <li><strong>In bed:</strong>
-                                <ul>
-                                    <li>Remove glasses.</li>
-                                    <li>Apply lip balm.</li>
-                                    <li>Fresh water nearby.</li>
-                                    <li>Help with CPAP machine.</li>
-                                    <li>Make sure urinals and walker are close for overnight.</li>
-                                    <li>For a visual guide, check the video on preparing the CPAP machine:</li>
-                                    <!-- Inserted Iframe Here -->
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gOGkJvSPhsM?si=1L2xTa3VztBriNyB&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </ul>
-                            </li>
-                            <li>Sleeps with her bedroom door open; she enjoys the sound of nature at night.</li>
-                        </ul>
-                    </li>
+                    <li>Assist with evening medications at 7 pm.</li>
+                    <li>Encourage relaxation activities before bedtime.</li>
                 </ul>
             </div>
         </div><!--stepContent-->
@@ -101,18 +92,116 @@
             <div class="stepDescription">
                 <ul>
                     <li>Refill medications for the week; she prefers to have her medications organized by day.</li>
-                    <li>Wash and change sheets; she likes lavender-scented detergent.</li>
-                    <li>Laundry; she prefers to have her clothes hung to dry when possible. For tips on laundry care, refer to <a href="https://www.goodhousekeeping.com/home/cleaning/a35650891/how-to-do-laundry/" target="_blank">Good Housekeeping</a>.</li>
-                    <li>Charge life alert (at desk); make sure it's functional. More info on life alerts can be found at <a href="https://www.lifealert.com/howitworks.aspx" target="_blank">Life Alert</a>.</li>
-                    <li>Charge iPad (at desk); she likes to watch her favorite shows on weekends.</li>
-                    <li>Organize her favorite books for the week; she loves mystery novels.</li>
-                    <li>Prepare a small treat for her weekly snack, like cookies or fruit.</li>
+                    <li>Grocery shopping for the week ahead.</li>
+                    <li>Plan meals for the upcoming week.</li>
                 </ul>
             </div>
         </div><!--stepContent-->
     </details><!--step3-->
 
+    <!-- First Image Hotspot Section -->
+    <details>
+        <summary class="stepTitle">CPAP Feature Overview 1</summary>
+        <div class="rounded-div">
+            <div class="stepDescription">
+                <p>Click on the hotspots in the image below:</p>
+                <!-- Image with a map -->
+                <img src="img/step1.png" alt="CPAP Front View" usemap="#cpap-map1">
+
+                <!-- Define the image map with clickable areas -->
+             <map name="cpap-map1">
+    <area shape="circle" coords="403,90,60" alt="Navigation Dial" href="#" onclick="showModal(event, 'modal_nav_dial')">
+				 
+				 
+				 
+    <area shape="circle" coords="351,146,60" alt="Display Panel" href="#" onclick="showModal(event, 'modal_display_panel')">
+				 
+				 
+    <area shape="circle" coords="767,196,60" alt="Water Reservoir" href="#" onclick="showModal(event, 'modal_water_reservoir')">
+				 
+				 
+    <area shape="circle" coords="342,309,60" alt="Home Key" href="#" onclick="showModal(event, 'modal_home_key')">
+				 
+				 
+</map>
+
+
+
+            </div>
+        </div><!--stepContent-->
+    </details><!--step1-->
+	
+	
+	
+	
+	
+	
+	
+
+    <!-- Modal for Navigation Dial -->
+    <div id="modal_nav_dial" class="modal">
+        <p>Navigation Dial: Use to adjust settings.</p>
+        <button class="close-btn" onclick="closeModal('modal_nav_dial')">Close</button>
+    </div>
+
+    <!-- Modal for Display Panel -->
+    <div id="modal_display_panel" class="modal">
+        <p>Display Panel: Shows the current settings and status.</p>
+        <button class="close-btn" onclick="closeModal('modal_display_panel')">Close</button>
+    </div>
+
+    <!-- Modal for Water Reservoir -->
+    <div id="modal_water_reservoir" class="modal">
+        <p>Water Reservoir: Ensure the tank is filled before each use.</p>
+        <button class="close-btn" onclick="closeModal('modal_water_reservoir')">Close</button>
+    </div>
+
+    <!-- Modal for Home Key -->
+    <div id="modal_home_key" class="modal">
+        <p>Home Key: Press to return to the home screen.</p>
+        <button class="close-btn" onclick="closeModal('modal_home_key')">Close</button>
+    </div>
+
+    <!-- Second Image Hotspot Section -->
+    <details>
+        <summary class="stepTitle">CPAP Feature Overview</summary>
+        <div class="rounded-div">
+            <div class="stepDescription">
+                <p>Click on the hotspots in the image below:</p>
+                <!-- Image with a map -->
+                <img src="img/cpap_side.png" alt="CPAP Side View" usemap="#cpap-map2">
+
+                <!-- Define the image map with clickable areas -->
+                <map name="cpap-map2">
+                    <area shape="circle" coords="300,150,50" alt="Air Outlet" href="#" onclick="showModal(event, 'modal2')">
+                </map>
+            </div>
+        </div><!--stepContent-->
+    </details><!--step2-->
+
+    <!-- Modal 2 for Air Outlet -->
+    <div id="modal2" class="modal">
+        <p>Air Outlet Information: Check that the air outlet is not obstructed.</p>
+        <button class="close-btn" onclick="closeModal('modal2')">Close</button>
+    </div>
+
     <script>
+        // Function to show the modal at the clicked hotspot's location
+        function showModal(event, modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+
+            // Position the modal relative to where the user clicked
+            modal.style.left = event.pageX + 'px';
+            modal.style.top = event.pageY + 'px';
+        }
+
+        // Function to close the modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Dropdown menu script
         document.querySelector('.dropbtn').addEventListener('click', function() {
             var dropdownContent = this.nextElementSibling;
 
